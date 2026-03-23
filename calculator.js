@@ -63,8 +63,12 @@ function generalCalculation(calcFunction,a,b){
   if(calcFunction && a && b){
     const Result= calcFunction(a,b)
     console.log(Result)
-    calculations["Result"]= Result
-    calculationHistory.push(calculations)
+    const newEntry= {
+      "Operator": calculations["Operator"],
+      "Operands": calculations["Operands"],
+      "Result": Result
+    }
+    calculationHistory.push(newEntry)
   }else{
     console.log(0)
   }
