@@ -72,8 +72,8 @@ function generalCalculation(calcFunction,a,b){
 generalCalculation()
 
 //Function to display history
-function displayHistory(calculationHistory){
-  if(calculationHistory){
+function displayHistory(){
+  if(calculationHistory.length>0){
     console.log(calculationHistory)
   }else{
     console.log("No History")
